@@ -18,6 +18,10 @@ public class Main {
 		myLinkedList.printList();
 		myLinkedList.prepend(5);
 		myLinkedList.printList();
+		myLinkedList.removeFirst();
+		myLinkedList.printList();
+		System.out.println(myLinkedList.removeFirst().value);
+		myLinkedList.printList();
 		
 //		myLinkedList.printList();
 //		myLinkedList.append(23);
