@@ -25,6 +25,11 @@ public class Main {
 		System.out.println(myLinkedList.getIndex(1).value);
 		myLinkedList.setValue(0, 10);
 		myLinkedList.printList();
+		myLinkedList.insert(3, 7);
+		myLinkedList.printList();
+		myLinkedList.insert(4, 8);
+		myLinkedList.printList();
+
 		
 //		myLinkedList.printList();
 //		myLinkedList.append(23);
