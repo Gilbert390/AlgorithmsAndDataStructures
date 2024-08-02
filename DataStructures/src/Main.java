@@ -23,6 +23,8 @@ public class Main {
 //		System.out.println(myLinkedList.removeFirst().value);
 //		myLinkedList.printList();
 		System.out.println(myLinkedList.getIndex(1).value);
+		myLinkedList.setValue(0, 10);
+		myLinkedList.printList();
 		
 //		myLinkedList.printList();
 //		myLinkedList.append(23);
