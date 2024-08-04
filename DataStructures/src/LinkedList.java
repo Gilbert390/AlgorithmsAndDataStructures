@@ -65,7 +65,6 @@ public class LinkedList {
 			tail = null;
 		}
 		return temp;
-		
 	}
 	
 	public void prepend(int value) {
@@ -133,6 +132,34 @@ public class LinkedList {
 		temp.next = newNode;
 		length++;
 		return true;
+	}
+	
+	public Node remove(int index) {
+		if(index < 0 || index >= length) {return null;}
+		if(index == 0) {return removeFirst();}
+		if(index == length-1) {return removeEnd();}
+		Node tempprev = getIndex(index-1);
+		Node temp = tempprev.next;
+		tempprev.next = temp.next;
+		temp.next = null;
+		length--;
+		
+		return temp;
+	}
+	
+	public void reverse() {
+		Node temp = head;
+		head = tail;
+		tail = temp;
+		Node after = tail.next;
+		Node before = null;
+		for(int i = 0; i < length; i++) {
+			after = temp.next;
+			temp.next = before;
+			before = temp;
+			temp = after;
+			
+		}
 	}
 	
 	
