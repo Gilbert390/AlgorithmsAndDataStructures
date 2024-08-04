@@ -40,7 +40,6 @@ public class LinkedList {
 		
 		Node previous = getHead();
 		Node temp = getHead();
-		temp = temp.next;
 		while(temp.next != null) {
 			previous = temp;
 			temp = temp.next;

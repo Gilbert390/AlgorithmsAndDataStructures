@@ -15,7 +15,7 @@ public class Main {
 //		myLinkedList.removeEnd();
 //		myLinkedList.printList();
 //		System.out.println("removed = " + myLinkedList.removeEnd().value);
-		myLinkedList.printList();
+//		myLinkedList.printList();
 		myLinkedList.append(4);
 		myLinkedList.printList();
 //		myLinkedList.removeFirst();
@@ -33,6 +33,9 @@ public class Main {
 		myLinkedList.printList();
 		myLinkedList.reverse();
 		myLinkedList.printList();
+		System.out.println(myLinkedList.removeEnd().value);
+		myLinkedList.printList();
+		
 
 		
 //		myLinkedList.printList();
