@@ -11,13 +11,20 @@ public class Main {
 		myLinkedList.append(2);
 //		myLinkedList.printList();
 		myLinkedList.append(3);
-		myLinkedList.printList();
+//		myLinkedList.printList();
 //		myLinkedList.removeEnd();
 //		myLinkedList.printList();
 //		System.out.println("removed = " + myLinkedList.removeEnd().value);
 //		myLinkedList.printList();
 		myLinkedList.append(4);
-		myLinkedList.printList();
+		myLinkedList.append(5);
+//		myLinkedList.append(6);`
+//		myLinkedList.append(7);
+//		myLinkedList.append(8);
+//		myLinkedList.append(9);
+//		myLinkedList.append(10);
+//		myLinkedList.append(11);
+//		myLinkedList.printList();
 //		myLinkedList.removeFirst();
 //		myLinkedList.printList();
 //		System.out.println(myLinkedList.removeFirst().value);
@@ -30,11 +37,15 @@ public class Main {
 //		myLinkedList.insert(4, 8);
 //		myLinkedList.printList();
 //		System.out.println(myLinkedList.remove(1).value);
+//		myLinkedList.printList();
+//		myLinkedList.reverse();
+//		myLinkedList.printList();
+//		System.out.println(myLinkedList.removeEnd().value);
 		myLinkedList.printList();
-		myLinkedList.reverse();
-		myLinkedList.printList();
-		System.out.println(myLinkedList.removeEnd().value);
-		myLinkedList.printList();
+		myLinkedList.findMiddleNode();
+//		System.out.println(myLinkedList.findMiddleNode().value);
+		System.out.println("result - " + myLinkedList.findKthFromEnd(2).value);
+		
 		
 
 		

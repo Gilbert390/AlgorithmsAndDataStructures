@@ -161,6 +161,55 @@ public class LinkedList {
 		}
 	}
 	
+	public Node findMiddleNode (){
+	    Node H1 = head;
+	    Node H2 = head;
+	    if(H1 == null || H2 == null) {return null;}
+	    while (H2.next != null){
+	    	H1 = H1.next;
+	    	H2 = H2.next;
+	    	if (H2.next != null) {
+	    		H2 = H2.next;
+	    	}
+	    }
+	    return H1;
+	}
+	
+	public boolean hasLoop() {
+		Node H1 = head;
+	    Node H2 = head;
+	    if(H1 == null || H2 == null) {return false;}
+	    while (H2.next != null){
+	    	H1 = H1.next;
+	    	H2 = H2.next;
+	    	if (H2.next != null) {
+	    		H2 = H2.next;
+	    	}
+	    	if(H1 == H2) {return true;}
+	    	
+	    }
+	    return false;
+		
+	}
+	
+	public Node findKthFromEnd(int k) {
+		Node fast = head;
+		Node slow = head;
+		for(int i = 0; i < k; i++) {
+			if(fast.next == null) {
+				return null;
+			}
+			fast = fast.next;
+			
+		}
+		
+		while(fast != null) {
+			fast = fast.next;
+			slow = slow.next;
+		}
+		return slow;
+	}
+	
 	
 
 }
