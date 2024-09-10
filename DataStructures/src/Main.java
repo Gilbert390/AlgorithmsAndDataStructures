@@ -8,8 +8,18 @@ public class Main {
 		
 		LinkedList myLinkedList = new LinkedList(3);
 //		myLinkedList.printList();
+		myLinkedList.append(3);
+		myLinkedList.append(8);
+		myLinkedList.append(8);
+		myLinkedList.append(8);
 		myLinkedList.append(8);
 //		myLinkedList.printList();
+		myLinkedList.append(5);
+		myLinkedList.append(5);
+		myLinkedList.append(5);
+		myLinkedList.append(5);
+		myLinkedList.append(5);
+		myLinkedList.append(5);
 		myLinkedList.append(5);
 //		myLinkedList.printList();
 //		myLinkedList.removeEnd();
@@ -18,6 +28,13 @@ public class Main {
 //		myLinkedList.printList();
 		myLinkedList.append(10);
 		myLinkedList.append(2);
+		myLinkedList.append(2);
+		myLinkedList.append(2);
+		myLinkedList.append(2);
+		myLinkedList.append(1);
+		myLinkedList.append(1);
+		myLinkedList.append(1);
+		myLinkedList.append(1);
 		myLinkedList.append(1);
 //		myLinkedList.append(6);`
 //		myLinkedList.append(7);
@@ -43,10 +60,12 @@ public class Main {
 //		myLinkedList.printList();
 //		System.out.println(myLinkedList.removeEnd().value);
 		myLinkedList.printList();
-		myLinkedList.findMiddleNode();
+//		myLinkedList.findMiddleNode();
 //		System.out.println(myLinkedList.findMiddleNode().value);
-		System.out.println("result - " + myLinkedList.findKthFromEnd(2).value);
-		myLinkedList.partitionList(5);
+//		System.out.println("result - " + myLinkedList.findKthFromEnd(2).value);
+//		myLinkedList.partitionList(5);
+		myLinkedList.removeDuplicates();
+		System.out.println("hi");
 		myLinkedList.printList();
 		
 		
