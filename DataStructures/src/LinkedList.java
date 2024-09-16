@@ -269,7 +269,14 @@ public class LinkedList {
 		head = tempH;
 	}
 	
-	
+	public int binaryToDecimal() {
+		int num = 0;
+		while(head != null) {
+			num = (num * 2) + head.value;
+			head = head.next;
+		}
+		return num;
+	}
 	
 
 }
