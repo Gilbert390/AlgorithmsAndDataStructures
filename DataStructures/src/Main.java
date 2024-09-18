@@ -8,13 +8,13 @@ public class Main {
 		
 		LinkedList myLinkedList = new LinkedList(1);
 //		myLinkedList.printList();
-		myLinkedList.append(0);
-		myLinkedList.append(1);
-		myLinkedList.append(1);
-		myLinkedList.append(1);
-//		myLinkedList.append(1);
-//		myLinkedList.append(8);
-//		myLinkedList.append(8);
+		myLinkedList.append(2);
+		myLinkedList.append(3);
+		myLinkedList.append(4);
+		myLinkedList.append(5);
+		myLinkedList.append(6);
+		myLinkedList.append(7);
+		myLinkedList.append(8);
 //		myLinkedList.printList();
 //		myLinkedList.append(5);
 //		myLinkedList.append(5);
@@ -67,8 +67,8 @@ public class Main {
 //		System.out.println("result - " + myLinkedList.findKthFromEnd(2).value);
 //		myLinkedList.partitionList(5);
 //		myLinkedList.removeDuplicates();
-		myLinkedList.printList();
-		System.out.println(myLinkedList.binaryToDecimal());
+		myLinkedList.reverseBetween(2, 4);
+//		System.out.println(myLinkedList.binaryToDecimal());
 		
 //		myLinkedList.binaryToDecimal();
 		
@@ -76,7 +76,7 @@ public class Main {
 		
 
 		
-//		myLinkedList.printList();
+		myLinkedList.printList();
 //		myLinkedList.append(23);
 //		myLinkedList.printList();
 //		myLinkedList.append(33);

@@ -278,6 +278,31 @@ public class LinkedList {
 		return num;
 	}
 	
+	public void reverseBetween(int m, int n) {
+		if(head == null) return;
+		Node d1 = new Node(0);
+		d1.next = head;
+		Node prevN = d1;
+		
+		
+		for(int i=0; i < m; i++) {
+			prevN = prevN.next;
+		}
+		System.out.println(prevN.value);
+		Node current = prevN.next;
+		System.out.println(current.value);
+		
+		for(int i=0; i < n-m; i ++){
+			Node ntm = current.next;
+			current.next = ntm.next;
+			System.out.println(current.next.value + " : current.next");
+			ntm.next = prevN.next;
+			prevN.next = ntm;
+			System.out.println(ntm.value + " : ntm");
+		}
+		head = d1.next;
+	}
+	
 
 }
 
